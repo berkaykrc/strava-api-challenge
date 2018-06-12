@@ -36,7 +36,7 @@ def source(request):
                             if allnames[j][i] == allnames[k][m]:
                                 duplicate_bikers.append(allnames[j][i])
         # ipdb.set_trace()
-        return Response(allnames)
+        return Response(duplicate_bikers)
 
     except Exception as x:
         print("Your exception", x)
